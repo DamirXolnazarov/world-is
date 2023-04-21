@@ -280,6 +280,15 @@ main section .cards .card .informations button:hover {
     flex-direction: column !important;
     align-items: center !important;
   }
+  .dark_mode {
+    display: none !important;
+  }
+  .title {
+    width: 100% !important;
+  }
+  .modes {
+    width: 30px !important;
+  }
 }
 @media screen and (max-width: 615px) {
   .name {
