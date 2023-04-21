@@ -25,7 +25,7 @@ iframe.innerHTML += `
                 <div class='td'><h3>alpha3Code:</h3><span class='ins'>${obj.alpha3Code}</span></div>
                 <div class='td'><h3>alpha2Code:</h3><span class='ins'>${obj.alpha2Code}</span></div>
                 <div class='td'><h3>territory, km:</h3><span class='ins'>${obj.area}</span></div>
-                <div class='td'><h3>territory, km:</h3><span class='ins'>${obj.subregion}</span></div>
+                <div class='td'><h3>subregion</h3><span class='ins'>${obj.subregion}</span></div>
                 <div class='td'><h3>independent:</h3><span class='in'></span></div>
                 <div class='td'><h3>callingCodes:</h3><span class='ins'>+ [ "${obj.callingCodes}" ]</span></div>
     </div>
