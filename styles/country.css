@@ -33,7 +33,7 @@ main section .country .title h1 {
   font-weight: 400;
 }
 main section .country .infos {
-  width: 100%;
+  width: 1600px;
   height: 500px;
   display: flex;
   flex-direction: row;
@@ -49,11 +49,11 @@ main section .country .infos .img img {
 }
 main section .country .infos .inform {
   width: 300px;
-  height: 100%;
+  height: 500px;
   line-height: 35px;
   display: flex;
   flex-direction: column;
-  margin-top: -7px;
+  margin-top: -120px;
   align-items: center;
 }
 main section .country .infos .inform ul {
