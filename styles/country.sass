@@ -1,0 +1,180 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+body
+    background: #333
+    transition: .3s
+    overflow-x: hidden
+main
+    section
+        width: 100%
+        height: 100vh
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        padding: 50px 300px
+        font-family: Arial, Helvetica, sans-serif
+        .country
+            width: 100%
+            height: 100%
+            color: #eaeaea
+            .title
+                text-align: center
+                h1
+                   font-size: 40px
+                   font-weight: 400
+            .infos
+                width: 100%
+                height: 500px
+                display: flex
+                flex-direction: row
+                align-items: flex-start
+                padding-top: 70px
+                justify-content: space-between
+                .img
+                    height: 300px
+                    img
+                        height: 300px
+                .inform
+                    width: 300px
+                    height: 100%
+                    line-height: 35px
+                    display: flex
+                    flex-direction: column
+                    margin-top: -7px
+                    align-items: center
+                    ul
+                        list-style-type: none
+                        
+                        span
+                            color: #6c6c6c
+            .additional
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: space-between
+                .td
+                    width: 140px
+                    display: flex
+                    margin: 10px
+                    flex-direction: column
+                    align-items: flex-start
+                    height: 50px
+                    justify-content: space-between
+                    h3
+                        font-weight: 400
+                        font-size: 17px
+                    .in
+                        color: #6c6c6c
+                        font-size: 14px
+                    .ins
+                        color: #6c6c6c
+                        font-size: 14px
+
+.back
+    cursor: pointer
+    svg
+        width: 50px
+        fill: #6c6c6c
+        left: 50px
+        top: 50px
+        position: absolute
+footer
+    width: 100%
+    border-top: 2px solid #00000036
+    height: 100px
+    margin-top: 100px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-evenly
+    span
+        font-size: 16px
+        color: #868686
+        font-family: Arial, Helvetica, sans-serif
+        font-weight: 400
+    h3
+        font-size: 16px
+        color: #868686
+        font-family: Arial, Helvetica, sans-serif
+        font-weight: 400
+@media screen and (max-width: 700px) 
+    body
+        overflow-y: scroll !important
+    section 
+        width: 100% !important
+        height: 100vh !important
+        flex-direction: column !important
+        padding: 50px 50px !important
+        overflow: visible !important
+    .img
+        width: 100% !important
+        display: flex
+        height: 100px !important
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        img
+            width: 100% !important
+            object-fit: contain
+    svg
+        width: 40px !important
+        height: 40px  !important
+    .title
+        width: 100% !important
+        text-align: center
+    .infos
+        height: 750px !important
+        flex-direction: column !important
+    .inform
+        margin-top: 30px !important
+        width: 100% !important
+        ul
+            font-size: 25px
+            text-align: start
+            line-height: 50px
+    .additional
+        height: 200px !important        
+        width: 100% !important
+        flex-wrap: wrap !important
+        .td
+            width: 150px !important
+            height: 70px !important
+            h3
+                font-size: 25px !important
+            span
+                font-size: 20px !important
+            
+@media screen and (max-width: 450px) 
+svg
+    width: 30px !important
+    height: 30px  !important
+.title
+    width: 100% !important
+    text-align: center
+    h1
+        font-size: 30px !important
+.img
+    height: 100px !important
+.infos
+    flex-direction: column !important
+.inform
+    width: 100% !important
+    ul
+        font-size: 20px !important
+        text-align: start
+        line-height: 50px
+.additional
+    height: 200px !important        
+    width: 100% !important
+    flex-wrap: wrap !important
+    .td
+        width: 120px !important
+        height: 70px !important
+        h3
+            font-size: 20px !important
+        span
+            font-size: 17px !important
+        

@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  transition: 0.3s;
+  overflow-x: hidden;
+}
+
+main section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 300px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main section .country {
+  width: 100%;
+  height: 100%;
+  color: #eaeaea;
+}
+main section .country .title {
+  text-align: center;
+}
+main section .country .title h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+main section .country .infos {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 70px;
+  justify-content: space-between;
+}
+main section .country .infos .img {
+  height: 300px;
+}
+main section .country .infos .img img {
+  height: 300px;
+}
+main section .country .infos .inform {
+  width: 300px;
+  height: 100%;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -7px;
+  align-items: center;
+}
+main section .country .infos .inform ul {
+  list-style-type: none;
+}
+main section .country .infos .inform ul span {
+  color: #6c6c6c;
+}
+main section .country .additional {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main section .country .additional .td {
+  width: 140px;
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 50px;
+  justify-content: space-between;
+}
+main section .country .additional .td h3 {
+  font-weight: 400;
+  font-size: 17px;
+}
+main section .country .additional .td .in {
+  color: #6c6c6c;
+  font-size: 14px;
+}
+main section .country .additional .td .ins {
+  color: #6c6c6c;
+  font-size: 14px;
+}
+
+.back {
+  cursor: pointer;
+}
+.back svg {
+  width: 50px;
+  fill: #6c6c6c;
+  left: 50px;
+  top: 50px;
+  position: absolute;
+}
+
+footer {
+  width: 100%;
+  border-top: 2px solid rgba(0, 0, 0, 0.2117647059);
+  height: 100px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer span {
+  font-size: 16px;
+  color: #868686;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+footer h3 {
+  font-size: 16px;
+  color: #868686;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    overflow-y: scroll !important;
+  }
+  section {
+    width: 100% !important;
+    height: 100vh !important;
+    flex-direction: column !important;
+    padding: 50px 50px !important;
+    overflow: visible !important;
+  }
+  .img {
+    width: 100% !important;
+    display: flex;
+    height: 100px !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .img img {
+    width: 100% !important;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  svg {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .title {
+    width: 100% !important;
+    text-align: center;
+  }
+  .infos {
+    height: 750px !important;
+    flex-direction: column !important;
+  }
+  .inform {
+    margin-top: 30px !important;
+    width: 100% !important;
+  }
+  .inform ul {
+    font-size: 25px;
+    text-align: start;
+    line-height: 50px;
+  }
+  .additional {
+    height: 200px !important;
+    width: 100% !important;
+    flex-wrap: wrap !important;
+  }
+  .additional .td {
+    width: 150px !important;
+    height: 70px !important;
+  }
+  .additional .td h3 {
+    font-size: 25px !important;
+  }
+  .additional .td span {
+    font-size: 20px !important;
+  }
+}
+svg {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.title {
+  width: 100% !important;
+  text-align: center;
+}
+.title h1 {
+  font-size: 30px !important;
+}
+
+.img {
+  height: 100px !important;
+}
+
+.infos {
+  flex-direction: column !important;
+}
+
+.inform {
+  width: 100% !important;
+}
+.inform ul {
+  font-size: 20px !important;
+  text-align: start;
+  line-height: 50px;
+}
+
+.additional {
+  height: 200px !important;
+  width: 100% !important;
+  flex-wrap: wrap !important;
+}
+.additional .td {
+  width: 120px !important;
+  height: 70px !important;
+}
+.additional .td h3 {
+  font-size: 20px !important;
+}
+.additional .td span {
+  font-size: 17px !important;
+}/*# sourceMappingURL=country.css.map */
