@@ -19,7 +19,6 @@ iframe.innerHTML += `
                 <li>languages: <span>${obj.languages[0].name}</span></li>
                 </ul>
                 </div>
-                
                 </div>
     <div class="additional">
                 <div class='td'><h3>alpha3Code:</h3><span class='ins'>${obj.alpha3Code}</span></div>
@@ -34,15 +33,13 @@ iframe.innerHTML += `
                 <span>created by Damir_uzb</span>
         </footer>
 `;
-
-                if(obj.independent == false){
-                   document.querySelector('.in').innerHTML = 'no'
-                }
-                else{
-                    document.querySelector('.in').innerHTML = 'yes'
-                }
-let back = document.querySelector('.back')
-back.onclick = () =>{
-    window.location.pathname = 'index.html'
-    event.preventDefault()
+if (obj.independent == false) {
+  document.querySelector(".in").innerHTML = "no";
+} else {
+  document.querySelector(".in").innerHTML = "yes";
 }
+let back = document.querySelector(".back");
+back.onclick = () => {
+  window.location.pathname = "index.html";
+  event.preventDefault();
+};

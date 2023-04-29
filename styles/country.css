@@ -34,8 +34,8 @@ main section .country .title h1 {
 }
 main section .country .infos {
   width: 100%;
-  height: 100vh;
   display: flex;
+  height: 600px;
   flex-direction: row;
   align-items: flex-start;
   padding-top: 70px;
@@ -49,16 +49,18 @@ main section .country .infos .img img {
   height: 300px;
 }
 main section .country .infos .inform {
-  width: 100px;
-  height: 1000px;
+  width: 500px;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: -100px;
+  margin-top: -20px;
   justify-content: flex-start;
   align-items: flex-end;
 }
 main section .country .infos .inform ul {
   list-style-type: none;
+  line-height: 45px;
+  font-size: 20px;
 }
 main section .country .infos .inform ul span {
   color: #6c6c6c;
@@ -67,10 +69,12 @@ main section .country .additional {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
+  height: 50px;
   justify-content: space-between;
 }
 main section .country .additional .td {
-  width: 140px;
+  width: 120px;
   display: flex;
   margin: 10px;
   flex-direction: column;
@@ -80,15 +84,15 @@ main section .country .additional .td {
 }
 main section .country .additional .td h3 {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 19px;
 }
 main section .country .additional .td .in {
   color: #6c6c6c;
-  font-size: 14px;
+  font-size: 15px;
 }
 main section .country .additional .td .ins {
   color: #6c6c6c;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .back {
@@ -186,57 +190,53 @@ footer h3 {
     font-size: 20px !important;
   }
 }
-svg {
-  width: 30px !important;
-  height: 30px !important;
+@media screen and (max-width: 450px) {
+  svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .title {
+    width: 100% !important;
+    text-align: center;
+  }
+  .title h1 {
+    font-size: 30px !important;
+  }
+  .img {
+    height: 100px !important;
+  }
+  .infos {
+    flex-direction: column !important;
+  }
+  .inform {
+    width: 100% !important;
+    margin-top: 70px !important;
+    align-items: flex-start !important;
+  }
+  .inform ul {
+    font-size: 20px !important;
+    text-align: start;
+    line-height: 50px;
+  }
+  .additional {
+    height: 300px !important;
+    width: 100% !important;
+    flex-wrap: wrap !important;
+  }
+  .additional .td {
+    width: 120px !important;
+    height: 60px !important;
+    text-align: start !important;
+  }
+  .additional .td h3 {
+    font-size: 20px !important;
+    text-align: start !important;
+  }
+  .additional .td span {
+    font-size: 17px !important;
+    text-align: start !important;
+  }
 }
-
-.title {
-  width: 100% !important;
-  text-align: center;
-}
-.title h1 {
-  font-size: 30px !important;
-}
-
-.img {
-  height: 100px !important;
-}
-
-.infos {
-  flex-direction: column !important;
-}
-
-.inform {
-  width: 100% !important;
-  margin-top: 70px !important;
-  align-items: flex-start !important;
-}
-.inform ul {
-  font-size: 20px !important;
-  text-align: start;
-  line-height: 50px;
-}
-
-.additional {
-  height: 300px !important;
-  width: 100% !important;
-  flex-wrap: wrap !important;
-}
-.additional .td {
-  width: 120px !important;
-  height: 60px !important;
-  text-align: start !important;
-}
-.additional .td h3 {
-  font-size: 20px !important;
-  text-align: start !important;
-}
-.additional .td span {
-  font-size: 17px !important;
-  text-align: start !important;
-}
-
 @media screen and (max-width: 385px) {
   svg {
     width: 30px !important;
